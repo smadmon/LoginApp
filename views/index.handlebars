@@ -1,0 +1,84 @@
+<body>
+
+
+<div class="main">
+
+<div class="main mySlides">
+	<img src="./Pics/Bamba.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	Bamba
+    </div>
+</div>
+
+<div class="main mySlides">
+<img src="./Pics/Dragon.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	Space Dragon
+    </div>
+</div>
+
+<div class="main mySlides">
+<img src="./Pics/Fly.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	Fly
+    </div>
+</div>
+
+<div class="main mySlides">
+<img src="./Pics/LettingGo.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	Letting Go
+    </div>
+</div>
+
+<div class="main mySlides">
+<img src="./Pics/Listening.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	Listening
+    </div>
+</div>
+
+<div class="main mySlides">
+<img src="./Pics/Monuments.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	Monuments
+    </div>
+</div>
+
+<div class="main mySlides">
+<img src="./Pics/One.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	One
+    </div>
+</div>
+
+<div class="main mySlides">
+<img src="./Pics/Trapped.jpg" alt="Smile" style="max-height:400px">
+	<div class="caption-bottom-left">
+    	Trapped
+    </div>
+</div>
+
+<button class="button left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="button right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
